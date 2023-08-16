@@ -14,8 +14,13 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'О нас', href: '#aboutus-section', current: false },
-    { name: 'Послуги', href: '#services-section', current: false },
+    { name: 'Ми', href: '#aboutus-section', current: false },
+    { name: 'Ремонт кавоварок', href: '#services-section', current: false },
+    { name: 'Встановлення кавових автоматів', href: '#services-section', current: false },
+    { name: 'Встановлення кавоварок', href: '#services-section', current: false },
+    { name: 'Доставка', href: '#services-section', current: false },
+    { name: 'Облаштування кавового бізнесу', href: '#services-section', current: false },
+    { name: 'Контакти', href: '#services-section', current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -36,7 +41,7 @@ const Navbar = () => {
                             {/* LOGO */}
 
                             <div className="flex flex-shrink-0 items-center border-right">
-                                <Link href="/" className='text-2xl sm:text-4xl font-semibold text-black'>
+                                <Link href="/" className='text-2xl sm:text-2xl font-semibold text-black'>
                                     Coffee-Boom Service
                                 </Link>
                             </div>
@@ -51,7 +56,7 @@ const Navbar = () => {
                                             href={item.href}
                                             className={classNames(
                                                 item.current ? 'bg-gray-900' : 'navlinks hover:text-black',
-                                                'px-3 py-4 rounded-md text-lg font-normal'
+                                                'px-3 py-4 rounded-md text-md font-normal'
                                             )}
                                             aria-current={item.href ? 'page' : undefined}
                                         >
