@@ -14,13 +14,11 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'Ми', href: '#aboutus-section', current: false },
-    { name: 'Ремонт кавоварок', href: '#services-section', current: false },
-    { name: 'Встановлення кавових автоматів', href: '#services-section', current: false },
-    { name: 'Встановлення кавоварок', href: '#services-section', current: false },
+    { name: 'Хто ми є', href: '#aboutus-section', current: false },
+    { name: 'Ремонт', href: '#services-section', current: false },
+    { name: 'Встановлення', href: '#services-section', current: false },
     { name: 'Доставка', href: '#services-section', current: false },
-    { name: 'Облаштування кавового бізнесу', href: '#services-section', current: false },
-    { name: 'Контакти', href: '#services-section', current: false },
+    { name: 'Для кафе', href: '#services-section', current: false },
 ]
 
 function classNames(...classes: string[]) {
