@@ -42,10 +42,10 @@ const names = [
         category: 'yearly'
     },
     {
-        heading: "Agency",
-        price: 139,
+        heading: "Ремонт кавоварок",
+        price: 450,
         user: 'per user, per yearly',
-        button: "Start My 15-day Trial",
+        button: "Докладніше",
         profiles: '100 Social Profiles',
         posts: '100 Scheduled Posts Per Profile',
         templates: "800+ Templated",
@@ -54,10 +54,10 @@ const names = [
         category: 'monthly'
     },
     {
-        heading: "Startup",
-        price: 41,
+        heading: "Ремонт автоматів",
+        price: 600,
         user: 'per user, per yearly',
-        button: "Start My 15-day Trial",
+        button: "Докладніше",
         profiles: '5 Social Profiles',
         posts: '5 Scheduled Posts Per Profile',
         templates: "400+ Templated",
@@ -66,10 +66,10 @@ const names = [
         category: 'monthly'
     },
     {
-        heading: "Business",
-        price: 29,
+        heading: "Ремонт кавомолок",
+        price: 400,
         user: 'per user, per yearly',
-        button: "Start My 15-day Trial",
+        button: "Докладніше",
         profiles: '10 Social Profiles',
         posts: '5 Scheduled Posts Per Profile',
         templates: "600+ Templated",
