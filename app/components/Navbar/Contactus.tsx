@@ -120,7 +120,7 @@ const Contactusform = () => {
           </div>
           <button type="button" data-te-ripple-init data-te-ripple-color="light"
             className="mb-6 inline-block w-full rounded bg-navyblue px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
-            Відправити
+            Надіслати
           </button>
         </form>
       </div>
@@ -139,13 +139,13 @@ const Contactusform = () => {
               </div>
               <div className="ml-6 grow">
                 <p className="mb-2 font-bold dark:text-white">
-                  Technical support
+                  З питань ремонту
                 </p>
                 <p className="text-neutral-500 dark:text-neutral-200">
-                  support@example.com
+                  remont@service.coffee-boom.com.ua
                 </p>
                 <p className="text-neutral-500 dark:text-neutral-200">
-                  +1 234-567-89
+                +38 067 389-98-74
                 </p>
               </div>
             </div>
@@ -163,13 +163,13 @@ const Contactusform = () => {
               </div>
               <div className="ml-6 grow">
                 <p className="mb-2 font-bold dark:text-white">
-                  Sales questions
+                  Встановлення автоматів
                 </p>
                 <p className="text-neutral-500 dark:text-neutral-200">
-                  sales@example.com
+                  avtomaty@service.coffee-boom.com.ua
                 </p>
                 <p className="text-neutral-500 dark:text-neutral-200">
-                  +1 234-567-89
+                +38 093 981-73-47
                 </p>
               </div>
             </div>
@@ -186,12 +186,12 @@ const Contactusform = () => {
                 </div>
               </div>
               <div className="ml-6 grow">
-                <p className="mb-2 font-bold dark:text-white">Press</p>
+                <p className="mb-2 font-bold dark:text-white">Встановлення кавоварок</p>
                 <p className="text-neutral-500 dark:text-neutral-200">
-                  press@example.com
+                  kavovarky@service.coffee-boom.com.ua
                 </p>
                 <p className="text-neutral-500 dark:text-neutral-200">
-                  +1 234-567-89
+                +380 95 581 94 85
                 </p>
               </div>
             </div>
@@ -208,12 +208,12 @@ const Contactusform = () => {
                 </div>
               </div>
               <div className="ml-6 grow">
-                <p className="mb-2 font-bold dark:text-white">Bug report</p>
+                <p className="mb-2 font-bold dark:text-white">Інші питання</p>
                 <p className="text-neutral-500 dark:text-neutral-200">
-                  bugs@example.com
+                  office@service.coffee-boom.com.ua
                 </p>
                 <p className="text-neutral-500 dark:text-neutral-200">
-                  +1 234-567-89
+                  +38 066 088-67-50
                 </p>
               </div>
             </div>
