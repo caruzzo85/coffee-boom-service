@@ -42,7 +42,7 @@ const Navbar = () => {
 
                             <div className="flex flex-shrink-0 items-center border-right">
                                 <Link href="/" className='text-2xl sm:text-2xl font-semibold text-black'>
-                                    Coffee-Boom Service
+                                    Coffee-Boom
                                 </Link>
                             </div>
 
