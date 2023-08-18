@@ -1,37 +1,53 @@
+"use client"
+
 import Image from "next/image";
+// banner.tsx
+import React from "react";
+import Slider from "react-slick";
+import Slide from "./slide";
 
 const Banner = () => {
-    return (
-        <div className='mx-auto max-w-7xl my-10 sm:py-10 px-6 lg:px-8'>
-            <div className='grid grid-cols-1 lg:grid-cols-2 my-16'>
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    adaptiveHeight: true,
+  };
 
-                {/* COLUMN-1 */}
+  const slidesData = [
+    {
+      buttonFirstText: "Button 1 Text",
+      buttonSecondText: "Button 1 Text",
+      title: "Slide 1 Title",
+      imageSrc: "/images/banner/banner.svg",
+    },
+    {
+        buttonFirstText: "Button 1 Text",
+        buttonSecondText: "Button 1 Text",
+        title: "Slide 2 Title",
+      imageSrc: "/images/banner/banner.svg",
+    },
+    // Add more slide data as needed
+  ];
 
-                <div className="mx-auto sm:mx-0">
-                    <div className='py-3 text-center lg:text-start'>
-                        <button className='text-blue bg-lightblue hover:shadow-xl text-sm md:text-lg font-bold px-6 py-1 rounded-3xl tracking-wider hover:text-white hover:bg-black'>TEXT</button>
-                    </div>
-                    <div className="py-3 text-center lg:text-start">
-                        <h1 className='text-7xl lg:text-70xl font-bold text-darkpurple'>
-                            Текст<br /> для головного <br />банеру у шапці.
-                        </h1>
-                    </div>
-                    <div className='my-7 text-center lg:text-start'>
-                        <button className='text-sm md:text-xl font-semibold hover:shadow-xl bg-blue text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-hoblue'>
-                            Get Started
-                        </button>
-                    </div>
-                </div>
-
-                {/* COLUMN-2 */}
-
-                <div className='lg:-m-24 lg:pt-20 hidden lg:block'>
-                    <Image src="/images/banner/banner.svg" alt="hero-image" width={800} height={642} />
-                </div>
-
-            </div>
-        </div>
-    )
-}
+  return (
+    <>
+      <Slider {...settings}>
+        {slidesData.map((slide, index) => (
+          <Slide
+            key={index}
+            buttonFirstText={slide.buttonFirstText}
+            buttonSecondText={slide.buttonSecondText}
+            title={slide.title}
+            imageSrc={slide.imageSrc}
+          />
+        ))}
+      </Slider>
+    </>
+  );
+};
 
 export default Banner;
