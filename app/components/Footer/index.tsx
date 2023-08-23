@@ -33,14 +33,14 @@ const products: ProductType[] = [
 
 const footer = () => {
     return (
-        <div className="bg-black -mt-40" id="first-section">
+        <div className="bg-black" id="first-section">
             <div className="mx-auto max-w-2xl pt-48 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
 
                     {/* COLUMN-1 */}
 
                     <div className='col-span-4'>
-                        <h3 className='text-white text-4xl font-semibold leading-9 mb-4 lg:mb-20'> Desgy Solutions</h3>
+                        <h3 className='text-white text-4xl font-semibold leading-9 mb-4 lg:mb-20'>Coffee-Boom Service</h3>
                         <div className='flex gap-4'>
                             <div className='footer-icons'>
                                 <Link href="https://facebook.com"><Image src={'/images/footer/vec.svg'} alt="facebook" width={15} height={20} /></Link>

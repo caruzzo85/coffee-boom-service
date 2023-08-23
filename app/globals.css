@@ -40,9 +40,24 @@ html {
   scroll-behavior: smooth !important;
 }
 
+::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            border-radius: 8px;
+            background-color: #e7e7e7;
+            border: 1px solid #cacaca;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            border-radius: 8px;
+            background-color: #cccccc;
+        }
+
+
 .navbar {
-  border-bottom: 0.5px solid rgba(196, 196, 196, 0.75);
-  ;
+
 }
 
 .hover-underline {
