@@ -6,6 +6,7 @@ import { Bars3Icon } from '@heroicons/react/24/outline';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import Contactusform from './Contactus';
+import ContactsPopup from './ContactsPopup';
 
 interface NavigationItem {
     name: string;
@@ -34,21 +35,22 @@ const Navbar = () => {
     return (
         <Disclosure as="nav" className="navbar">
             <>
-                <div className="mx-auto max-w-7xl p-3 md:p-4 lg:px-8">
+                <div className="mx-auto max-w-7xl p-3 md:p-4">
                     <div className="relative flex h-12 sm:h-20 items-center">
-                        <div className="flex flex-1 items-center sm:justify-between">
+                        <div className="flex flex-1 items-center justify-between">
 
                             {/* LOGO */}
 
-                            <div className="flex flex-shrink-0 items-center border-right">
+                            <div className="w-[20%]">
                                 <Link href="/" className='text-2xl sm:text-2xl font-semibold text-black'>
-                                    Coffee-Boom
+                                <span className='max-md:hidden'>Coffee-Boom</span>
+                                <span className='md:hidden'>C</span>
                                 </Link>
                             </div>
 
                             {/* LINKS */}
 
-                            <div className="hidden lg:flex items-center border-right ">
+                            <div className="hidden lg:flex items-center ">
                                 <div className="flex justify-end space-x-4">
                                     {navigation.map((item) => (
                                         <Link
@@ -66,10 +68,8 @@ const Navbar = () => {
                                 </div>
 
                             </div>
-                            {/* <button className='hidden lg:flex justify-end text-xl font-semibold bg-transparent py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-navyblue hover:text-white'>Contact us</button> */}
                             <Contactusform />
-                        </div>
-
+                            <ContactsPopup/>
 
                         {/* DRAWER FOR MOBILE VIEW */}
 
@@ -84,6 +84,9 @@ const Navbar = () => {
                         <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
                             <Drawerdata />
                         </Drawer>
+                                                </div>
+
+
 
                     </div>
                 </div>

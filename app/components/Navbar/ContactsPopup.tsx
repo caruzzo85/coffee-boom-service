@@ -1,10 +1,12 @@
-"use client"
+"use state"
+
+import { Fragment, useState } from "react";
 import { Dialog, Transition } from '@headlessui/react';
-import { Fragment, useState } from 'react';
-import Link from 'next/link';
+import Link from "next/link";
 
 
-const Contactusform = () => {
+const ContactsPopup = () => {
+
     let [isOpen, setIsOpen] = useState(false)
 
     const [inputValues, setInputValues] = useState({
@@ -40,10 +42,28 @@ const Contactusform = () => {
         setIsOpen(true)
     }
 
-    return (
-        <>
 
-            <Transition appear show={isOpen} as={Fragment}>
+
+    return(
+<>
+
+<div className="lg:hidden md:flex inset-y-0 right-0 items-center pr-2 sm:static sm:inset-auto md:ml-6 sm:pr-0">
+<button type="button" className='max-lg:visible  justify-end text-xl font-semibold bg-transparent py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-navyblue hover:text-white' onClick={openModal}>
+                        Koнтакти
+                    </button>
+
+</div>
+
+
+<div className="w-[20%] text-right items-center pr-2 sm:static sm:inset-auto md:ml-6 sm:pr-0">
+                <div className='max-lg:hidden'>
+                    <button type="button" className='text-xl font-semibold bg-transparent py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-navyblue hover:text-white' onClick={openModal}>
+                        Koнтакти
+                    </button>
+                </div>
+            </div>
+            
+                    <Transition appear show={isOpen} as={Fragment}>
                 <Dialog as="div" className="relative z-50" onClose={closeModal}>
                     <Transition.Child
                         as={Fragment}
@@ -213,15 +233,15 @@ const Contactusform = () => {
         </div>
       </div>
     </div>
-
                                 </Dialog.Panel>
                             </Transition.Child>
                         </div>
                     </div>
                 </Dialog>
             </Transition>
-        </>
+            </>
     )
 }
 
-export default Contactusform;
+
+export default ContactsPopup
