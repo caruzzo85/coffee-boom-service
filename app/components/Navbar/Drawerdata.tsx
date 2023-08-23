@@ -1,5 +1,9 @@
-import React from "react";
+"use client"
+
+import React, { useState } from "react";
+
 import Link from "next/link";
+import ContactsPopup from "./ContactsPopup";
 import Contactusform from "./Contactus";
 
 interface NavigationItem {
@@ -21,7 +25,9 @@ function classNames(...classes: string[]) {
 }
 
 const Data = () => {
+
     return (
+        <>
         <div className="rounded-md max-w-sm w-full mx-auto">
             <div className="flex-1 space-y-4 py-1">
                 <div className="sm:block">
@@ -39,15 +45,15 @@ const Data = () => {
                                 {item.name}
                             </Link>
                         ))}
+<Link href={''} onClick={ContactsPopup} className='text-black hover:bg-gray-700 hover:text-purple block  py-2 rounded-md text-base font-medium'>Contacts mobile</Link>
                         <div className="mt-4"></div>
-                        <button className="bg-navyblue w-full hover:text-white text-white border border-purple font-medium py-2 px-4 rounded">
-                            Contact Us
-                        </button>
-                        {/* <Contactusform /> */}
+
+                        <Contactusform/>
                     </div>
                 </div>
             </div>
         </div>
+        </>
     );
 }
 
