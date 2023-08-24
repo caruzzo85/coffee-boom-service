@@ -13,11 +13,12 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'About Us', href: '#aboutus-section', current: true },
-    { name: 'Services', href: '#services-section', current: false },
-    { name: 'FAQ', href: '#faq-section', current: false },
-    { name: 'Blog', href: '#blog-section', current: false },
-    { name: 'Testimonial', href: '#testimonial-section', current: false },
+    { name: 'Хто ми є', href: '#aboutus-section', current: false },
+    { name: 'Ремонт', href: '#services-section', current: false },
+    { name: 'Встановлення', href: '#services-section', current: false },
+    { name: 'Доставка', href: '#services-section', current: false },
+    { name: 'Для кафе', href: '#services-section', current: false },
+    { name: 'Магазин', href: '#services-section', current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -45,10 +46,11 @@ const Data = () => {
                                 {item.name}
                             </Link>
                         ))}
+
 <Link href={''} onClick={ContactsPopup} className='text-black hover:bg-gray-700 hover:text-purple block  py-2 rounded-md text-base font-medium'>Contacts mobile</Link>
                         <div className="mt-4"></div>
 
-                        <Contactusform/>
+                      <Contactusform/>
                     </div>
                 </div>
             </div>

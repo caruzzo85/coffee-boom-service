@@ -1,6 +1,7 @@
 "use client"
 import { Disclosure } from '@headlessui/react';
 import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import Drawer from "./Drawer";
@@ -41,12 +42,16 @@ const Navbar = () => {
 
                             {/* LOGO */}
 
-                            <div className="w-[20%]">
+                            <div className="">
                                 <Link href="/" className='text-2xl sm:text-2xl font-semibold text-black'>
-                                <span className='max-md:hidden'>Coffee-Boom</span>
-                                <span className='md:hidden'>C</span>
-                                </Link>
-                            </div>
+                                <span className='max-md:hidden'>
+                                <Image
+      src="/images/logo/logo.svg"
+      width={150}
+      height={150}
+      alt="Picture of the author"    /></span>
+
+
 
                             {/* LINKS */}
 
