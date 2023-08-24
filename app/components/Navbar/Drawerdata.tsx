@@ -46,7 +46,11 @@ const Data = () => {
                                 {item.name}
                             </Link>
                         ))}
-                        <Contactusform/>
+
+<Link href={''} onClick={ContactsPopup} className='text-black hover:bg-gray-700 hover:text-purple block  py-2 rounded-md text-base font-medium'>Contacts mobile</Link>
+                        <div className="mt-4"></div>
+
+                      <Contactusform/>
                     </div>
                 </div>
             </div>

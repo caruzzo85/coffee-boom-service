@@ -50,9 +50,8 @@ const Navbar = () => {
       width={150}
       height={150}
       alt="Picture of the author"    /></span>
-                                <span className='md:hidden'>C</span>
-                                </Link>
-                            </div>
+
+
 
                             {/* LINKS */}
 
