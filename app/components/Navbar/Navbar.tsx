@@ -9,6 +9,8 @@ import Drawerdata from "./Drawerdata";
 import Contactusform from './Contactus';
 import ContactsPopup from './ContactsPopup';
 
+import { usePathname } from 'next/navigation'
+
 interface NavigationItem {
     name: string;
     href: string;
@@ -22,6 +24,7 @@ const navigation: NavigationItem[] = [
     { name: 'Доставка', href: '#services-section', current: false },
     { name: 'Для кафе', href: '#services-section', current: false },
     { name: 'Магазин', href: '#services-section', current: false },
+    { name: 'Статті', href: '/articles', current: false },
 
 ]
 
@@ -32,6 +35,7 @@ function classNames(...classes: string[]) {
 const Navbar = () => {
 
     const [isOpen, setIsOpen] = React.useState(false);
+    const pathname = usePathname()
 
     return (
         <Disclosure as="nav" className="navbar">
@@ -44,13 +48,13 @@ const Navbar = () => {
 
                             <div className="">
                                 <Link href="/" className='text-2xl sm:text-2xl font-semibold text-black'>
-                                <span className='max-md:hidden'>
-                                <Image
-      src="/images/logo/logo.svg"
-      width={150}
-      height={150}
-      alt="Picture of the author"    /></span>
-                                <span className='md:hidden'>C</span>
+                                    <span className='max-md:hidden'>
+                                        <Image
+                                            src="/images/logo/logo.svg"
+                                            width={150}
+                                            height={150}
+                                            alt="Picture of the author" /></span>
+                                    <span className='md:hidden'>C</span>
                                 </Link>
                             </div>
 
@@ -75,22 +79,22 @@ const Navbar = () => {
 
                             </div>
                             <Contactusform />
-                            <ContactsPopup/>
+                            <ContactsPopup />
 
-                        {/* DRAWER FOR MOBILE VIEW */}
+                            {/* DRAWER FOR MOBILE VIEW */}
 
-                        {/* DRAWER ICON */}
+                            {/* DRAWER ICON */}
 
-                        <div className='block lg:hidden'>
-                            <Bars3Icon className="block h-6 w-6" aria-hidden="true" onClick={() => setIsOpen(true)} />
+                            <div className='block lg:hidden'>
+                                <Bars3Icon className="block h-6 w-6" aria-hidden="true" onClick={() => setIsOpen(true)} />
+                            </div>
+
+                            {/* DRAWER LINKS DATA */}
+
+                            <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
+                                <Drawerdata />
+                            </Drawer>
                         </div>
-
-                        {/* DRAWER LINKS DATA */}
-
-                        <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
-                            <Drawerdata />
-                        </Drawer>
-                                                </div>
 
 
 
