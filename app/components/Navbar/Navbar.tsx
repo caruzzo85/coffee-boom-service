@@ -65,7 +65,7 @@ const Navbar = () => {
                                     {navigation.map((item) => (
                                         <Link
                                             key={item.name}
-                                            href={'http://localhost:3000/'+item.href}
+                                            href={'/'+item.href}
                                             className={classNames(
                                                 item.current ? 'bg-gray-900' : 'navlinks hover:text-black',
                                                 'px-3 py-4 rounded-md text-md font-normal'
