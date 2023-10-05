@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Switch } from '@headlessui/react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 const names = [
@@ -15,7 +16,8 @@ const names = [
         templates: "400+ Templated",
         view: "Calendar View",
         support: '24/7 Support',
-        category: 'yearly'
+        category: 'yearly',
+        link: 'cofe'
     },
     {
         heading: "Business",
@@ -27,7 +29,8 @@ const names = [
         templates: "600+ Templated",
         view: "Calendar View",
         support: '24/7 VIP Support',
-        category: 'yearly'
+        category: 'yearly',
+        link: 'cofe'
     },
     {
         heading: "Agency",
@@ -39,7 +42,8 @@ const names = [
         templates: "800+ Templated",
         view: "Calendar View",
         support: '24/7 VIP Support',
-        category: 'yearly'
+        category: 'yearly',
+        link: 'cofe'
     },
     {
         heading: "Ремонт побутових кавоварок",
@@ -51,7 +55,8 @@ const names = [
         templates: "Декальцінація",
         view: "Профілактичні роботи",
         support: 'Налаштування',
-        category: 'monthly'
+        category: 'monthly',
+        link: 'cofe'
     },
     {
         heading: "Ремонт вендингових автоматів",
@@ -63,7 +68,8 @@ const names = [
         templates: "Декальцінація",
         view: "Профілактичні роботи",
         support: 'Налаштування',
-        category: 'monthly'
+        category: 'monthly',
+        link: 'cofe'
     },
     {
         heading: "Ремонт професійних кавомашин",
@@ -75,7 +81,8 @@ const names = [
         templates: "Декальцінація",
         view: "Профілактичні роботи",
         support: 'Налаштування',
-        category: 'monthly'
+        category: 'monthly',
+        link: 'cofe'
     },
 
 
@@ -141,7 +148,9 @@ const Manage = () => {
                             <h4 className='text-2xl font-bold mb-3'>{items.heading}</h4>
                             <h2 className='text-5xl sm:text-65xl font-extrabold mb-3'>від &#8372; {items.price}</h2>
                             <p className='text-sm font-medium text-darkgrey mb-6'>{items.user}</p>
+                            <Link href={"repair/" + items.link} passHref legacyBehavior>
                             <button className='text-sm font-bold text-blue bg-transparent hover:bg-blue hover:text-white border-2 border-blue rounded-full py-4 px-12 mb-6'>{items.button}</button>
+                            </Link>
                             <hr style={{ color: "darkgrey", width: "50%", margin: "auto" }} />
                             <h3 className='text-sm font-medium text-darkgrey mb-3 mt-6'>{items.profiles}</h3>
                             <h3 className='text-sm font-medium text-darkgrey mb-3'>{items.posts}</h3>
