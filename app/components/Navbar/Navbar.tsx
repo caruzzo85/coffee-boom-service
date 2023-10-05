@@ -24,7 +24,7 @@ const navigation: NavigationItem[] = [
     { name: 'Доставка', href: '#services-section', current: false },
     { name: 'Для кафе', href: '#services-section', current: false },
     { name: 'Магазин', href: '#services-section', current: false },
-    { name: 'Статті', href: '/articles', current: false },
+    { name: 'Статті', href: 'articles', current: false },
 
 ]
 
@@ -65,7 +65,7 @@ const Navbar = () => {
                                     {navigation.map((item) => (
                                         <Link
                                             key={item.name}
-                                            href={item.href}
+                                            href={'/'+item.href}
                                             className={classNames(
                                                 item.current ? 'bg-gray-900' : 'navlinks hover:text-black',
                                                 'px-3 py-4 rounded-md text-md font-normal'
