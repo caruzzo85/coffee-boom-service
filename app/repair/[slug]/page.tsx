@@ -2,7 +2,6 @@ import { PrismaClient } from '@prisma/client'
 import Image from 'next/image'
 import BrandList from './brandlist';
 import { notFound } from 'next/navigation'
-import { Head } from 'next/document';
 import type { Metadata, ResolvingMetadata } from 'next'
 
 interface RepairProps {
