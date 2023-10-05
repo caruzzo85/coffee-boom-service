@@ -7,45 +7,6 @@ import Link from 'next/link';
 
 const names = [
     {
-        heading: "Startup",
-        price: 41,
-        user: 'per user, per month',
-        button: "Start My 15-day Trial",
-        profiles: '5 Social Profiles',
-        posts: '5 Scheduled Posts Per Profile',
-        templates: "400+ Templated",
-        view: "Calendar View",
-        support: '24/7 Support',
-        category: 'yearly',
-        link: 'cofe'
-    },
-    {
-        heading: "Business",
-        price: 29,
-        user: 'per user, per month',
-        button: "Start My 15-day Trial",
-        profiles: '10 Social Profiles',
-        posts: '5 Scheduled Posts Per Profile',
-        templates: "600+ Templated",
-        view: "Calendar View",
-        support: '24/7 VIP Support',
-        category: 'yearly',
-        link: 'cofe'
-    },
-    {
-        heading: "Agency",
-        price: 139,
-        user: 'per user, per month',
-        button: "Start My 15-day Trial",
-        profiles: '100 Social Profiles',
-        posts: '100 Scheduled Posts Per Profile',
-        templates: "800+ Templated",
-        view: "Calendar View",
-        support: '24/7 VIP Support',
-        category: 'yearly',
-        link: 'cofe'
-    },
-    {
         heading: "Ремонт побутових кавоварок",
         price: 500,
         user: 'Ремонт здійснюється виключно в сервіс-центрі',
@@ -56,7 +17,7 @@ const names = [
         view: "Профілактичні роботи",
         support: 'Налаштування',
         category: 'monthly',
-        link: 'cofe'
+        link: 'repair'
     },
     {
         heading: "Ремонт вендингових автоматів",
@@ -122,6 +83,7 @@ const Manage = () => {
                 </div>
 
 
+                {/*
                 <div className='mt-6 relative'>
                     <div className='dance-text mb-5'>get 3 months free</div>
                     <Image src="/images/manage/toggle.svg" alt="toggle-image" width={24} height={24} className="toggleImage" />
@@ -140,7 +102,7 @@ const Manage = () => {
                         </Switch>
                         <h3 className='text-sm font-medium ml-5'>Billed Monthly</h3>
                     </div>
-                </div>
+                </div> */}
 
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-16 mx-5 gap-14 manage'>
                     {filteredData.map((items, i) => (
@@ -148,7 +110,7 @@ const Manage = () => {
                             <h4 className='text-2xl font-bold mb-3'>{items.heading}</h4>
                             <h2 className='text-5xl sm:text-65xl font-extrabold mb-3'>від &#8372; {items.price}</h2>
                             <p className='text-sm font-medium text-darkgrey mb-6'>{items.user}</p>
-                            <Link href={"repair/" + items.link} passHref legacyBehavior>
+                            <Link href={items.link} passHref legacyBehavior>
                             <button className='text-sm font-bold text-blue bg-transparent hover:bg-blue hover:text-white border-2 border-blue rounded-full py-4 px-12 mb-6'>{items.button}</button>
                             </Link>
                             <hr style={{ color: "darkgrey", width: "50%", margin: "auto" }} />
