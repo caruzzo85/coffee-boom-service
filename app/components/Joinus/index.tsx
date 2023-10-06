@@ -16,7 +16,7 @@ const Join = () => {
 
                 <div className="text-center">
                     <h3 className="text-4xl sm:text-6xl font-bold my-6 leading-10">Отримати консультацію</h3>
-                    <p className="text-lightblack text-base font-normal">Якщо у вас є запитання, залишіть будь ласка ім'я та номер телефону, аби наш менеджер зв'язався з Вами</p>
+                    <p className="text-lightblack text-base font-normal">Якщо у вас є запитання, залишіть будь ласка ім&apos;я та номер телефону, аби наш менеджер зв&apos;язався з Вами</p>
                 </div>
 
                 <form action={createAccount} method="POST">
@@ -24,7 +24,7 @@ const Join = () => {
                     <div className="sm:flex items-center mx-5 p-5 sm:p-0 rounded-xl justify-between bg-lightgrey sm:rounded-full">
                         <div>
                             <input type="name" className="my-4 py-4 sm:pl-6 lg:text-xl text-black sm:rounded-full bg-lightgrey pl-1 focus:outline-none bg-emailbg focus:text-black"
-                            placeholder="Ім'я"
+                            placeholder="Ім&apos;я"
                             maxLength={32}
                             autoComplete="off" />
                         </div>
