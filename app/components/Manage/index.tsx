@@ -64,21 +64,23 @@ const Manage = () => {
     return (
         <div id="services-section">
             <div className='mx-auto max-w-7xl sm:py-20 lg:px-8 my-16'>
-                <h3 className='text-center text-4xl sm:text-65xl font-black'>Manage All Your Social Media <br /> Profiles From One Place.</h3>
+                <h3 className='text-center text-4xl sm:text-65xl font-black'>
+                    Пропонуємо наші послуги:
+                </h3>
 
 
                 <div className='md:flex md:justify-around mt-20'>
                     <div className='flex gap-5 justify-center md:justify-start'>
                         <Image src="/images/manage/right.svg" alt="right-icon" width={21} height={14} />
-                        <h4 className='text-lg font-semibold'>Free 15-day trial</h4>
+                        <h4 className='text-lg font-semibold'>Гарантія 6 місяців</h4>
                     </div>
                     <div className='flex gap-5 justify-center md:justify-start'>
                         <Image src="/images/manage/right.svg" alt="right-icon" width={21} height={14} />
-                        <h4 className='text-lg font-semibold'>Unlimited Team Members</h4>
+                        <h4 className='text-lg font-semibold'>Безкоштовний виклик майстра</h4>
                     </div>
                     <div className='flex gap-5 justify-center md:justify-start'>
                         <Image src="/images/manage/right.svg" alt="right-icon" width={21} height={14} />
-                        <h4 className='text-lg font-semibold'>Cancel Anytime</h4>
+                        <h4 className='text-lg font-semibold'>Знижка постійним клієтам 20%</h4>
                     </div>
                 </div>
 
@@ -108,8 +110,8 @@ const Manage = () => {
                     {filteredData.map((items, i) => (
                         <div className='manageTabs text-center p-10' key={i}>
                             <h4 className='text-2xl font-bold mb-3'>{items.heading}</h4>
-                            <h2 className='text-5xl sm:text-65xl font-extrabold mb-3'>від &#8372; {items.price}</h2>
-                            <p className='text-sm font-medium text-darkgrey mb-6'>{items.user}</p>
+                            <h2 className='text-5xl sm:text-30xl font-bold mb-3'>від &#8372; {items.price}</h2>
+                            <p className={'text-sm font-medium mb-6'}>{items.user}</p>
                             <Link href={items.link} passHref legacyBehavior>
                             <button className='text-sm font-bold text-blue bg-transparent hover:bg-blue hover:text-white border-2 border-blue rounded-full py-4 px-12 mb-6'>{items.button}</button>
                             </Link>
