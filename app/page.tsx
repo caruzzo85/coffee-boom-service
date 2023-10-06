@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main>
       <Banner />
-      <Aboutus />
+      {/* <Aboutus /> */}
       {/* <Beliefs /> */}
       {/*<Wework />
       <Ourteam />
