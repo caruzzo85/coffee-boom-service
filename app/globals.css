@@ -141,10 +141,15 @@ html {
 }
 
 .bg-build {
-  background-image: url('/images/beliefs/bg.svg');
+  background-image: url('/images/beliefs/bg.webp');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: unset;
+  background-position: right center;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  height: 700px;
+  flex-direction: row-reverse;
 }
 
 .girldoodle {
@@ -409,4 +414,25 @@ html {
 
 .slick-slider{
 overflow: hidden;
+}
+
+
+
+.muvokan-tekstas {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  mix-blend-mode: screen;
+}
+
+@keyframes scaleImage {
+  100% {
+  transform: scale(1);
+  }
+}
+
+@keyframes fadeInText {
+  100% {
+  opacity: 1;
+  }
 }

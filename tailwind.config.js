@@ -40,7 +40,10 @@ module.exports = {
       'btnblue' : "#267dff",
       'bggrey' : '#DDDDDD',
       'footer' : 'rgba(226, 223, 223, 0.75)',
-      'linegrey' : "#C4C4C4"
+      'linegrey' : "#C4C4C4",
+      'green' : '#1ebf1b',
+      'darkgreen' : '#147b13',
+      'red' : '#ff0000',
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
