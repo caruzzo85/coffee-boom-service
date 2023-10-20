@@ -25,7 +25,6 @@ const navigation: NavigationItem[] = [
     { name: 'Доставка', href: '#services-section', current: false },
     { name: 'Для кафе', href: '#services-section', current: false },
     { name: 'Магазин', href: '#services-section', current: false },
-    { name: 'Статті', href: 'articles', current: false },
 
 ]
 
