@@ -1,4 +1,5 @@
 "use client"
+
 import { Disclosure } from '@headlessui/react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -24,7 +25,6 @@ const navigation: NavigationItem[] = [
     { name: 'Доставка', href: '#services-section', current: false },
     { name: 'Для кафе', href: '#services-section', current: false },
     { name: 'Магазин', href: '#services-section', current: false },
-    { name: 'Статті', href: 'articles', current: false },
 
 ]
 
@@ -46,17 +46,14 @@ const Navbar = () => {
 
                             {/* LOGO */}
 
-                            <div className="">
-                                <Link href="/" className='text-2xl sm:text-2xl font-semibold text-black'>
-                                    <span className='max-md:hidden'>
+                                <Link href="/" className="">
+                                    <span className="">
                                         <Image
-                                            src="/images/logo/logo.svg"
-                                            width={150}
-                                            height={150}
+                                            src="/images/logo/logo.png"
+                                            width={60}
+                                            height={60}
                                             alt="Picture of the author" /></span>
-                                    <span className='md:hidden'>C</span>
                                 </Link>
-                            </div>
 
                             {/* LINKS */}
 
