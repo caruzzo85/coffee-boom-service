@@ -3,6 +3,8 @@
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from '@headlessui/react';
 import Link from "next/link";
+import MailToLink from "../MailToLink";
+import PhoneToLink from "../PhoneToLink";
 
 
 const ContactsPopup = () => {
@@ -96,9 +98,9 @@ const ContactsPopup = () => {
                     </button>
                                     <div className="py-8 lg:py-8 px-4 mx-auto max-w-screen-lg">
                                         <div className="flex flex-shrink-0 items-center justify-center">
-                                            <Link href="/" className='text-2xl sm:text-4xl font-semibold text-black'>
+                                            <span className='text-2xl sm:text-4xl font-semibold text-black'>
                                                 Наші контакти
-                                            </Link>
+                                            </span>
                                         </div>
                                     </div>
 
@@ -154,10 +156,10 @@ const ContactsPopup = () => {
                   З питань ремонту
                 </p>
                 <p className="text-neutral-500 dark:text-neutral-200">
-                  remont@service.coffee-boom.com.ua
+                  <MailToLink email='remont@service.coffee-boom.com.ua'/>
                 </p>
                 <p className="text-neutral-500 dark:text-neutral-200">
-                +38 067 389-98-74
+                <PhoneToLink phone='+38 067 389-98-74' />
                 </p>
               </div>
             </div>
@@ -178,10 +180,10 @@ const ContactsPopup = () => {
                   Встановлення автоматів
                 </p>
                 <p className="text-neutral-500 dark:text-neutral-200">
-                  avtomaty@service.coffee-boom.com.ua
+                <MailToLink email='avtomaty@service.coffee-boom.com.ua'/>
                 </p>
                 <p className="text-neutral-500 dark:text-neutral-200">
-                +38 093 981-73-47
+                <PhoneToLink phone='+38 093 981-73-47' />
                 </p>
               </div>
             </div>
@@ -200,10 +202,10 @@ const ContactsPopup = () => {
               <div className="ml-6 grow">
                 <p className="mb-2 font-bold dark:text-white">Встановлення кавоварок</p>
                 <p className="text-neutral-500 dark:text-neutral-200">
-                  kavovarky@service.coffee-boom.com.ua
+                <MailToLink email='kavovarky@service.coffee-boom.com.ua'/>
                 </p>
                 <p className="text-neutral-500 dark:text-neutral-200">
-                +380 95 581 94 85
+                <PhoneToLink phone='+380 95 581 94 85' />
                 </p>
               </div>
             </div>
@@ -222,10 +224,10 @@ const ContactsPopup = () => {
               <div className="ml-6 grow">
                 <p className="mb-2 font-bold dark:text-white">Інші питання</p>
                 <p className="text-neutral-500 dark:text-neutral-200">
-                  office@service.coffee-boom.com.ua
+                <MailToLink email='office@service.coffee-boom.com.ua'/>
                 </p>
                 <p className="text-neutral-500 dark:text-neutral-200">
-                  +38 066 088-67-50
+                <PhoneToLink phone='+38 066 088-67-50'/>
                 </p>
               </div>
             </div>
