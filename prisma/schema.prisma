@@ -10,17 +10,17 @@ datasource db {
 model Article {
   id          Int     @id @default(autoincrement())
   title       String? @db.VarChar(255)
-  text        String? @db.Text()
+  text        String? @db.VarChar(255)
   description String? @db.VarChar(255)
   keywords    String? @db.VarChar(255)
-  image       String? @db.VarChar(255)
   slug        String? @unique(map: "slug") @db.VarChar(255)
+  image       String? @db.VarChar(255)
 }
 
 model RepairDevice {
   id          Int     @id @default(autoincrement())
   title       String? @db.VarChar(255)
-  text        String? @db.Text()
+  text        String? @db.Text
   description String? @db.VarChar(255)
   keywords    String? @db.VarChar(255)
   image       String? @db.VarChar(255)
