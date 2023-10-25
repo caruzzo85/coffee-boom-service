@@ -146,11 +146,24 @@ html {
   background-size: cover;
   background-position: right center;
   display: flex;
-  align-content: space-between;
+  align-content: end;
   flex-wrap: wrap;
   height: 700px;
   flex-direction: row-reverse;
 }
+
+.bg-build-2 {
+  background-image: url('/images/beliefs/vending_machine.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-content: end;
+  flex-wrap: wrap;
+  height: 700px;
+  flex-direction: row-reverse;
+}
+
 
 .girldoodle {
   top: 12px;
@@ -210,9 +223,7 @@ html {
 }
 
 .faq-bg {
-  background-image: url('/images/faq/swirl.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #dbfad7;
 }
 
 .bg-testimonial {
@@ -264,7 +275,7 @@ html {
 
 .footer-icons {
   box-shadow: 0px 19px 28px rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: #000000;
   border-radius: 50%;
   padding: 15px 20px;
   display: flex;
@@ -399,19 +410,6 @@ html {
   display: block;
 }
 
-.manage > div:nth-child(2) {
-  background-color: #00224A!important;
-  color: #ffffff;
-}
-
-.manage > div:nth-child(2) button {
-  color: #ffffff;
-}
-
-.manage > div:nth-child(2) h3 {
-  color: #ffffff;
-}
-
 .slick-slider{
 overflow: hidden;
 }
@@ -423,6 +421,7 @@ overflow: hidden;
   color: black;
   font-weight: bold;
   mix-blend-mode: screen;
+  width: 100%;
 }
 
 @keyframes scaleImage {
@@ -435,4 +434,9 @@ overflow: hidden;
   100% {
   opacity: 1;
   }
+}
+
+.lightgrey{
+color: #ffffff;
+background-color: #f5f6fa;
 }

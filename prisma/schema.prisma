@@ -7,7 +7,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Article {
+model article {
   id          Int     @id @default(autoincrement())
   title       String? @db.VarChar(255)
   text        String? @db.VarChar(255)
@@ -17,7 +17,7 @@ model Article {
   image       String? @db.VarChar(255)
 }
 
-model RepairDevice {
+model repairdevice {
   id          Int     @id @default(autoincrement())
   title       String? @db.VarChar(255)
   text        String? @db.Text

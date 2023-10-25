@@ -19,12 +19,12 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'Хто ми є', href: '#aboutus-section', current: false },
-    { name: 'Ремонт', href: '#services-section', current: false },
-    { name: 'Встановлення', href: '#services-section', current: false },
-    { name: 'Доставка', href: '#services-section', current: false },
-    { name: 'Для кафе', href: '#services-section', current: false },
-    { name: 'Магазин', href: '#services-section', current: false },
+    { name: 'Хто ми є', href: '/#aboutus-section', current: false },
+    { name: 'Ремонт', href: '/#services-section', current: false },
+    { name: 'Встановлення', href: '/#services-section', current: false },
+    { name: 'Доставка', href: '/#services-section', current: false },
+    { name: 'Для кафе', href: '/#services-section', current: false },
+    { name: 'Магазин', href: 'https://coffee-boom.com.ua/', current: false },
 
 ]
 
@@ -62,7 +62,7 @@ const Navbar = () => {
                                     {navigation.map((item) => (
                                         <Link
                                             key={item.name}
-                                            href={'/'+item.href}
+                                            href={item.href}
                                             className={classNames(
                                                 item.current ? 'bg-gray-900' : 'navlinks hover:text-black',
                                                 'px-3 py-4 rounded-md text-md font-normal'
