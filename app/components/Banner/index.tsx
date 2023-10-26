@@ -20,15 +20,15 @@ const Banner = () => {
   const slidesData = [
     {
       buttonFirstText: "Button 1 Text",
-      buttonSecondText: "Button 1 Text",
-      title: "Slide 1 Title",
-      imageSrc: "/images/banner/banner.svg",
+      buttonSecondText: "Подробиці",
+      title: "Встановлення кавових автоматів",
+      imageSrc: "/images/banner/slide_1.webp",
     },
     {
         buttonFirstText: "Button 1 Text",
-        buttonSecondText: "Button 1 Text",
-        title: "Slide 2 Title",
-      imageSrc: "/images/banner/banner.svg",
+        buttonSecondText: "Подробиці",
+        title: "Ремонт побутових кавоварок",
+      imageSrc: "/images/banner/slide_2.webp",
     },
     // Add more slide data as needed
   ];
