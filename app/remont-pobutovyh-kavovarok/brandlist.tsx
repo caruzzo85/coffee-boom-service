@@ -15,7 +15,7 @@ export type BrandProps = {
   }
 
 const prisma = new PrismaClient();
-const brandList = await prisma.repairDevice.findMany({
+const brandList = await prisma.repairdevice.findMany({
   skip: 1
 });
 

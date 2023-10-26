@@ -13,7 +13,7 @@ interface RepairProps {
 const prisma = new PrismaClient();
 
 const fetchRepair = async (slugText: string) => {
-  const repair = await prisma.repairDevice.findUnique({
+  const repair = await prisma.repairdevice.findUnique({
     where: {
       slug: slugText
     }

@@ -6,7 +6,7 @@ import BrandList from './brandlist';
 const prisma = new PrismaClient();
 
 const fetchRepair = async () => {
-  const repair = await prisma.repairDevice.findFirst()  
+  const repair = await prisma.repairdevice.findFirst()  
   return repair;
 }
 
