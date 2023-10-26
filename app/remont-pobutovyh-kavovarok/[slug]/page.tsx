@@ -40,13 +40,7 @@ export default async function RepairPage({params}: RepairProps) {
       <BrandList/>
   
   <div className="mt-10">
-  
-  <div className="mb-4 md:mb-0 w-full max-w-screen-lg mx-auto relative">
-  <h2 className="text-4xl font-semibold text-gray-100 leading-tight bg-white">
-      {repair?.title}
-    </h2>
-  </div>
-  
+   
   <div className="px-4 lg:px-0 mt-12 text-gray-700 max-w-screen-lg mx-auto text-lg leading-relaxed">
     <div dangerouslySetInnerHTML={{ __html: text}}/>
   </div>

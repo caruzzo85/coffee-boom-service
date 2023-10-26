@@ -17,7 +17,7 @@ const names = [
         view: "Профілактичні роботи",
         support: 'Налаштування',
         category: 'monthly',
-        link: 'repair'
+        link: 'remont-pobutovyh-kavovarok'
     },
     {
         heading: "Ремонт вендингових автоматів",
@@ -30,7 +30,7 @@ const names = [
         view: "Профілактичні роботи",
         support: 'Налаштування',
         category: 'monthly',
-        link: 'cofe'
+        link: 'remont-vendingovyh-avtomativ'
     },
     {
         heading: "Ремонт професійних кавомашин",
@@ -43,7 +43,7 @@ const names = [
         view: "Профілактичні роботи",
         support: 'Налаштування',
         category: 'monthly',
-        link: 'cofe'
+        link: 'remont-profesynyh-kavomashyn'
     },
 
 
