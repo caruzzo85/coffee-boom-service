@@ -26,7 +26,7 @@ export default function Home() {
       <Manage />
       <Beliefs />
       <FAQ />
-      <Testimonials />
+      {/* <Testimonials /> */}
       {/*<Articles />*/}
       <Joinus />
     </main>
