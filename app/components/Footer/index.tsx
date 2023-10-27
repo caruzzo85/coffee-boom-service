@@ -47,7 +47,7 @@ const footer = () => {
           className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
           Адреса
         </h6>
-        <p className="text-left">
+        <p className="sm:text-center md:text-left">
           Петра Радченка, 4<br/> Київ, Україна
         </p>
       </div>
@@ -95,7 +95,7 @@ const footer = () => {
       </div>
 
 
-      <div className="text-right">
+      <div className="sm:text-center md:text-right">
         <h6
           className="mb-4 justify-center font-semibold uppercase md:justify-start">
           Телефони
