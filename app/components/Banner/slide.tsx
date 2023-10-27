@@ -21,7 +21,7 @@ const Slide = ({ buttonFirstText, buttonSecondText, title, imageSrc }: SlideProp
              */}
           </div>
           <div className="py-3 text-center lg:text-start">
-            <h1 className="text-7xl lg:text-70xl font-bold text-darkpurple text-center">
+            <h1 className="text-4xl sm:text-65xl font-bold text-darkpurple text-center">
               {title}
             </h1>
           </div>
