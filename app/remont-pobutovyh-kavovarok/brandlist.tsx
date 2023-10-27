@@ -1,4 +1,5 @@
 import { PrismaClient } from '@prisma/client'
+import Image from 'next/image';
 import Link from 'next/link';
 
 import { usePathname } from 'next/navigation'
@@ -28,9 +29,9 @@ const brandList = await prisma.repairdevice.findMany({
         <ul className="flex flex-wrap items-center justify-center text-gray-900 dark:text-white">
 
         {brandList.map((brand: BrandProps, id: number) =>  (
-        <li key={id}>
-            <Link href={`/remont-pobutovyh-kavovarok/${brand.slug}`} className="mr-4 hover:underline md:mr-6 ">
-            {brand.title}
+        <li key={id}  className="px-4 md:px-6">
+            <Link href={`/remont-pobutovyh-kavovarok/${brand.slug}`}>
+              <Image src={`/images/brands/${brand.slug}.svg`} alt='' width={100} height={100}/> 
         </Link>
         </li>
         ))}

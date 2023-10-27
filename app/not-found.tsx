@@ -14,10 +14,8 @@ export default function NotFound() {
   
       <div className="px-6 py-10 mx-auto">
     
-  <div className="mt-10">
-    PAGE NOT FOUND
-    
-    
+  <div className="mt-10 text-center">
+    СТОРІНКА НЕ ЗНАЙДЕНА
     </div>
     </div>
     </div>
