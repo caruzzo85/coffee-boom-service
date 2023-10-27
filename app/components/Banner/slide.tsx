@@ -21,12 +21,12 @@ const Slide = ({ buttonFirstText, buttonSecondText, title, imageSrc }: SlideProp
              */}
           </div>
           <div className="py-3 text-center lg:text-start">
-            <h1 className="text-7xl lg:text-70xl font-bold text-darkpurple">
+            <h1 className="text-4xl sm:text-65xl font-bold text-darkpurple text-center">
               {title}
             </h1>
           </div>
           <div className="my-7 text-center lg:text-start">
-            <button className="text-sm md:text-xl font-semibold hover:shadow-xl bg-blue text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-hoblue">
+            <button className="text-sm md:text-xl font-semibold hover:shadow-xl bg-green text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-darkgreen">
               {buttonSecondText}
             </button>
           </div>
