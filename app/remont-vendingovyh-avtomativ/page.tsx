@@ -1,5 +1,9 @@
+'use client'
+
 import { notFound } from 'next/navigation'
 import type { Metadata, ResolvingMetadata } from 'next'
+import ContactsPopup from '../components/Navbar/ContactsPopup';
+import Join from '../components/Joinus';
 
 
 export default async function RepairVendingovyhAvtomativ() {
@@ -45,9 +49,8 @@ export default async function RepairVendingovyhAvtomativ() {
 функціонування вашого обладнання.</p>
   </div>
   </div>
-  
     </div>
-  
+    <Join/>
       </div>
     </main>
   

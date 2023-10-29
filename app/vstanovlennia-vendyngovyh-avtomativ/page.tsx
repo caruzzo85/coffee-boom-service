@@ -1,8 +1,13 @@
+'use state'
+
+
 export const metadata = {
     title: 'Unconventional Tabs - Cruip Tutorials',
     description: 'Page description',
   }
   import Image from 'next/image'
+import ContactsPopup from '../components/Navbar/ContactsPopup';
+import Join from '../components/Joinus';
   
 
   export default async function ArticlePage() {
@@ -46,12 +51,12 @@ export const metadata = {
 
     <h2>Ремонт кавомашин</h2>
     <p>Незважаючи на високу якість продукції, яку пропонує компанія «COFFEE-BOOM», будь-яка техніка має властивість виходити з ладу. Для вирішення будь-якого роду проблем з працездатністю обладнання необхідно користуватися послугами професіоналів. Наші співробітники мають багаторічний досвід роботи по ремонту кавоварок популярних виробників, що дозволяє значно продовжити їх експлуатаційний термін.</p>
-
   </div>
   </div>
   
     </div>
-  
+
+<Join/>  
       </div>
     </main>
   
