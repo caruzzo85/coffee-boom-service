@@ -3,6 +3,7 @@ import Image from 'next/image'
 import BrandList from '../brandlist';
 import { notFound } from 'next/navigation'
 import type { Metadata, ResolvingMetadata } from 'next'
+import Join from '@/app/components/Joinus';
 
 interface RepairProps {
   params: {
@@ -45,7 +46,7 @@ export default async function RepairPage({params}: RepairProps) {
     <div dangerouslySetInnerHTML={{ __html: text}}/>
   </div>
   </div>
-  
+  <Join/>
     </div>
   
       </div>

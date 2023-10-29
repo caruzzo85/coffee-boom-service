@@ -1,8 +1,6 @@
-export const metadata = {
-    title: 'Unconventional Tabs - Cruip Tutorials',
-    description: 'Page description',
-  }
-  import Image from 'next/image'
+'use client'
+
+import Join from '../components/Joinus';
   
 
   export default async function ArticlePage() {
@@ -77,7 +75,8 @@ export const metadata = {
   </div>
   
     </div>
-  
+    <Join/>
+
       </div>
     </main>
   
