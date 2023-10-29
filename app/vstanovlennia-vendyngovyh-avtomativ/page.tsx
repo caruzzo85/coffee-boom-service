@@ -1,11 +1,6 @@
 'use state'
 
-
-export const metadata = {
-    title: 'Unconventional Tabs - Cruip Tutorials',
-    description: 'Page description',
-  }
-  import Image from 'next/image'
+import Image from 'next/image'
 import ContactsPopup from '../components/Navbar/ContactsPopup';
 import Join from '../components/Joinus';
   

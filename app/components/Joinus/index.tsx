@@ -61,10 +61,16 @@ const Join: FC = () => {
                         <div className="mx-auto max-w-4xl pt-5">
                             <div className="sm:flex items-center mx-5 p-5 sm:p-0 rounded-xl justify-between bg-lightgrey sm:rounded-full">
                                 <div>
-                                    <input type="name" className="my-4 py-4 sm:pl-6 lg:text-xl text-black sm:rounded-full bg-lightgrey pl-1 focus:outline-none bg-emailbg focus:text-black"
+                                    <input
+                                     type="name" 
+                                     className="my-4 py-4 sm:pl-6 lg:text-xl text-black sm:rounded-full bg-lightgrey pl-1 focus:outline-none bg-emailbg focus:text-black"
                                         placeholder="Ім&apos;я"
                                         maxLength={32}
-                                        autoComplete="off" />
+                                        autoComplete="off"
+                                        {...register('name', {
+                                            required: {value: true, message: 'Введіть будь-ласка коректне імя'},
+                                            validate: {}
+                                             })}/>
 
                                 </div>
                                 <div>
