@@ -1,5 +1,7 @@
+'use client'
 import { notFound } from 'next/navigation'
 import type { Metadata, ResolvingMetadata } from 'next'
+import ContactsPopup from '../components/Navbar/ContactsPopup';
 
 
 export default async function RepairPage() {
@@ -59,7 +61,8 @@ Coffee Boom Service є вашим надійним партнером у пит�
   </div>
   
     </div>
-  
+    <ContactsPopup btnName="Зв&apos;язатися з нами"/>
+
       </div>
     </main>
   
