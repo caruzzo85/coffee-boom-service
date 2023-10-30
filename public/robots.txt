@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://service.coffee-boom.com.ua/
+
+# Sitemaps
+Sitemap: https://service.coffee-boom.com.ua/sitemap.xml
