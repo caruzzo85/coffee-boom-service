@@ -23,12 +23,12 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-XHB1GL4D1V" />
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-4Q2305BTV8" />
         <Script id='gtag' dangerouslySetInnerHTML={{
           __html: `window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-XHB1GL4D1V');`}}/>
+          gtag('config', 'G-4Q2305BTV8');`}}/>
       </body>
     </html>
   )
