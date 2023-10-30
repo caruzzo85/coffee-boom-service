@@ -33,7 +33,7 @@ const Join: FC = () => {
     return (
         <>
 
-            <div className="my-32">
+            <div className="my-32" id="callback">
                 <div className='mx-auto max-w-3xl lg:max-w-7xl sm:py-4 lg:px-8'>
 
                     <div className="text-center">
