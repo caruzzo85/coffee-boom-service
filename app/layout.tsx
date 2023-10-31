@@ -2,6 +2,7 @@ import './globals.css';
 import Navbar from './components/Navbar/index';
 import Footer from './components/Footer/index';
 import Script from 'next/script';
+import GoogleTagManager from './components/GoogleTagManager/intex';
 
 
 export const metadata = {
@@ -23,12 +24,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-4Q2305BTV8" />
-        <Script id='gtag' dangerouslySetInnerHTML={{
-          __html: `window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-4Q2305BTV8');`}}/>
+        <GoogleTagManager GA_MEASUREMENT_ID='G-4Q2305BTV8'/>
       </body>
     </html>
   )
