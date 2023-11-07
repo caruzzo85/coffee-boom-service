@@ -1,4 +1,4 @@
-import { PrismaClient } from '@prisma/client'
+import prisma from '../db';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -15,7 +15,6 @@ export type BrandProps = {
     image: string | null;
   }
 
-const prisma = new PrismaClient();
 const brandList = await prisma.repairdevice.findMany({
   skip: 1
 });
