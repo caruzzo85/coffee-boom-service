@@ -1,5 +1,4 @@
-import { PrismaClient } from '@prisma/client'
-import Image from 'next/image'
+import prisma from '@/app/db';
 import BrandList from '../brandlist';
 import { notFound } from 'next/navigation'
 import type { Metadata, ResolvingMetadata } from 'next'
@@ -10,8 +9,6 @@ interface RepairProps {
     slug: string;
   }
 }
-
-const prisma = new PrismaClient();
 
 const fetchRepair = async (slugText: string) => {
   const repair = await prisma.repairdevice.findUnique({

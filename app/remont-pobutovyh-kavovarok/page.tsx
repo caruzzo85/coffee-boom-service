@@ -1,10 +1,8 @@
-import { PrismaClient } from '@prisma/client'
 import Image from 'next/image'
 import BrandList from './brandlist';
 import Join from '../components/Joinus';
+import prisma from '../db';
 
-
-const prisma = new PrismaClient();
 
 const fetchRepair = async () => {
   const repair = await prisma.repairdevice.findFirst()  

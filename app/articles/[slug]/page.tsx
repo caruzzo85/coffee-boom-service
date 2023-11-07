@@ -8,14 +8,12 @@ import Tab0Image3 from '@/public/images/insta/insta1.png'
 import { PrismaClient } from '@prisma/client'
 import { GetServerSideProps } from 'next'
 import Image from 'next/image'
-
+import prisma from '@/app/db';
 interface RepairProps {
   params: {
     slug: string;
   }
 }
-
-const prisma = new PrismaClient();
 
 const fetchRepair = async (slugText: string) => {
   const repair = await prisma.article.findUnique({
