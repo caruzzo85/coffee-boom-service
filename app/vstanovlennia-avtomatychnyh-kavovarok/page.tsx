@@ -1,14 +1,14 @@
 'use client'
 
 import Join from '../components/Joinus';
-  
 
-  export default async function ArticlePage() {
+  export default function ArticlePage() {
   
  
   
     return (
-      <main className="relative flex flex-col justify-center bg-white overflow-hidden">
+      <>
+        <main className="relative flex flex-col justify-center bg-white overflow-hidden">
       <div className="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
   
       <div className="px-6 py-10 mx-auto">
@@ -70,7 +70,7 @@ import Join from '../components/Joinus';
 
     <p>Звертайтеся за телефоном: (067) 389-98-74.</p>
 
-    <p>З повагою, адміністрація компанії &quot;COFFEE-BOOM&quot;.</p>
+    <p>З повагою, адміністрація компанії &quot;COFFEE-BOOM Service&quot;.</p>
   </div>
   </div>
   
@@ -79,7 +79,7 @@ import Join from '../components/Joinus';
 
       </div>
     </main>
-  
+  </>
     );
   }
   

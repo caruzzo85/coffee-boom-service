@@ -17,7 +17,7 @@ import ContactsPopup from '../components/Navbar/ContactsPopup';
   
   <div className="mb-4 md:mb-0 w-full max-w-screen-lg mx-auto relative">
   <h2 className="text-4xl font-semibold text-gray-100 leading-tight bg-white">
-     Встановлення кавомашин у Києві
+     Кав&apos;ярня під ключ - це просто!
     </h2>
   </div>
   
