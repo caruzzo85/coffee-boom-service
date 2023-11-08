@@ -1,6 +1,4 @@
 'use client'
-import { notFound } from 'next/navigation'
-import type { Metadata, ResolvingMetadata } from 'next'
 import ContactsPopup from '../components/Navbar/ContactsPopup';
 
 
