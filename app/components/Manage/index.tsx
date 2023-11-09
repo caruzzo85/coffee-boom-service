@@ -112,7 +112,7 @@ const Manage = () => {
                             <h4 className='text-2xl font-bold mb-3'>{items.heading}</h4>
                             <h2 className='text-5xl sm:text-30xl font-bold mb-3'>від &#8372; {items.price}</h2>
                             <p className={'text-sm font-medium mb-6'}>{items.user}</p>
-                            <Link href={items.link} passHref legacyBehavior>
+                            <Link href={process.env.NEXT_PUBLIC_HOST +'/'+ items.link} passHref legacyBehavior>
                             <button className='text-sm font-bold text-green bg-transparent hover:bg-darkgreen hover:text-white border-2 border-green rounded-full py-4 px-12 mb-6'>{items.button}</button>
                             </Link>
                             <hr style={{ color: "darkgrey", width: "50%", margin: "auto" }} />
