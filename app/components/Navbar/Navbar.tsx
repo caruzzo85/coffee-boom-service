@@ -46,7 +46,7 @@ const Navbar = () => {
 
                             {/* LOGO */}
 
-                                <Link href="/" className="">
+                                <Link href={process.env.NEXT_PUBLIC_HOST as string} className="">
                                     <span className="">
                                         <Image
                                             src="/images/logo/logo.png"
@@ -62,7 +62,7 @@ const Navbar = () => {
                                     {navigation.map((item) => (
                                         <Link
                                             key={item.name}
-                                            href={item.href}
+                                            href={process.env.NEXT_PUBLIC_HOST + item.href}
                                             className={classNames(
                                                 item.current ? 'bg-gray-900' : 'navlinks hover:text-black',
                                                 'px-3 py-4 rounded-md text-md font-normal'
