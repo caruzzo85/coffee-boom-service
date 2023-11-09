@@ -29,7 +29,7 @@ const brandList = await prisma.repairdevice.findMany({
 
         {brandList.map((brand: BrandProps, id: number) =>  (
         <li key={id}  className="px-4 md:px-6">
-            <Link href={`/remont-pobutovyh-kavovarok/${brand.slug}`}>
+            <Link href={process.env.NEXT_PUBLIC_HOST + `/remont-pobutovyh-kavovarok/${brand.slug}`}>
               <Image src={`/images/brands/${brand.slug}.svg`} alt='' width={100} height={100}/> 
         </Link>
         </li>
