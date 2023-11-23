@@ -23,14 +23,22 @@ const Banner = () => {
       buttonSecondText: "Подробиці",
       title: "Встановлення кавових автоматів",
       imageSrc: "/images/banner/slide_1.webp",
+      link: "/vstanovlennia-vendyngovyh-avtomativ"
     },
     {
-        buttonFirstText: "Button 1 Text",
-        buttonSecondText: "Подробиці",
-        title: "Ремонт побутових кавоварок",
+      buttonFirstText: "Button 1 Text",
+      buttonSecondText: "Подробиці",
+      title: "Ремонт побутових кавоварок",
       imageSrc: "/images/banner/slide_2.webp",
+      link: "/remont-pobutovyh-kavovarok"
     },
-    // Add more slide data as needed
+    {
+      buttonFirstText: "Button 1 Text",
+      buttonSecondText: "Подробиці",
+      title: "Встановлення професійних кавомашин",
+      imageSrc: "/images/banner/slide_3.webp",
+      link: "/vstanovlennia-avtomatychnyh-kavovarok"
+    },
   ];
 
   return (
@@ -43,6 +51,7 @@ const Banner = () => {
             buttonSecondText={slide.buttonSecondText}
             title={slide.title}
             imageSrc={slide.imageSrc}
+            link={slide.link}
           />
         ))}
       </Slider>
