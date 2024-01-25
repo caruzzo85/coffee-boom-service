@@ -31,6 +31,16 @@
 	<priority>1.0</priority>
 </url>
 <url>
+	<loc>https://service.coffee-boom.com.ua/remont-profesynyh-kavomashyn</loc>
+	<lastmod>2024-01-25T11:42:02+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://service.coffee-boom.com.ua/remont-vendingovyh-avtomativ</loc>
+	<lastmod>2024-01-25T11:42:02+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
 	<loc>https://service.coffee-boom.com.ua/remont-pobutovyh-kavovarok/gaggia</loc>
 	<lastmod>2023-11-29T11:42:07+01:00</lastmod>
 	<priority>0.8</priority>
@@ -64,5 +74,20 @@
 	<loc>https://service.coffee-boom.com.ua/remont-pobutovyh-kavovarok/dr-coffee</loc>
 	<lastmod>2023-11-29T11:42:07+01:00</lastmod>
 	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://service.coffee-boom.com.ua/#services-section</loc>
+	<lastmod>2024-01-25T11:42:02+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://service.coffee-boom.com.ua/#aboutus-section</loc>
+	<lastmod>2024-01-25T11:42:02+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://coffee-boom.com.ua</loc>
+	<lastmod>2024-01-25T11:42:02+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 </urlset>
