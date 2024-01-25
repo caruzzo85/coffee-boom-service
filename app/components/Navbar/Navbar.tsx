@@ -19,11 +19,11 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'Хто ми є', href: '/#aboutus-section', current: false },
-    { name: 'Ремонт', href: '/#services-section', current: false },
-    { name: 'Встановлення', href: '#vstanovlennya-avtomativ', current: false },
-    { name: 'Доставка', href: '/dostavka-kavy-ta-obladnannia', current: false },
-    { name: 'Для кафе', href: '/dlia-kafe', current: false },
+    { name: 'Хто ми є', href: 'https://service.coffee-boom.com.ua/#aboutus-section', current: false },
+    { name: 'Ремонт', href: 'https://service.coffee-boom.com.ua/#services-section', current: false },
+    { name: 'Встановлення', href: 'https://service.coffee-boom.com.ua/#vstanovlennya-avtomativ', current: false },
+    { name: 'Доставка', href: 'https://service.coffee-boom.com.ua/dostavka-kavy-ta-obladnannia', current: false },
+    { name: 'Для кафе', href: 'https://service.coffee-boom.com.ua/dlia-kafe', current: false },
     { name: 'Магазин', href: 'https://coffee-boom.com.ua/', current: false },
 
 ]
