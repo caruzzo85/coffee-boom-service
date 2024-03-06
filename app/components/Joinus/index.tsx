@@ -16,18 +16,18 @@ const Join: FC = () => {
 
 
     const { control, register, handleSubmit, reset, formState } = useForm<FormData>();
-    const {errors} = formState;
+    const { errors } = formState;
     const [isPopupOpen, setIsPopupOpen] = useState(false); // Add state variable
 
     function onSubmit(data: any) {
-        
+
         sendEmail(data);
         setIsPopupOpen(true);
         reset();
         setTimeout(() => {
             setIsPopupOpen(false);
             errors
-        }, 5000);
+        }, 50000);
     }
 
     return (
@@ -43,52 +43,52 @@ const Join: FC = () => {
 
 
                     {isPopupOpen && (
-                        <div className="fixed right-0 bottom-0 bg-gold text-center py-2 rounded-full lg:px-2">
-                        <div className="p-2 bg:indigo-800 items-center text-indigo-100 leading-none flex lg:inline-flex" role="alert">
-                          <span className="font-semibold mr-2 text-left flex-auto">Дякуємо! Ми звяжимось з вами найближчим часом</span>
-                      
-                          <button onClick={() => setIsPopupOpen(false)}> &#10006;</button>
+                        <div className="fixed right-0 bottom-0 bg-gold text-center py-2 rounded-full lg:px-2" id="form-sended">
+                            <div className="p-2 bg:indigo-800 items-center text-indigo-100 leading-none flex lg:inline-flex" role="alert">
+                                <span className="font-semibold mr-2 text-left flex-auto">Дякуємо! Ми звяжимось з вами найближчим часом</span>
+
+                                <button onClick={() => setIsPopupOpen(false)}> &#10006;</button>
+                            </div>
                         </div>
-                      </div>
                     )}
-                              
+
                     {isPopupOpen}
 
-        {errors.email && (
-          <div className="invalid-feedback">Please enter a valid email.</div>
-        )}
+                    {errors.email && (
+                        <div className="invalid-feedback">Please enter a valid email.</div>
+                    )}
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="mx-auto max-w-4xl pt-5">
                             <div className="sm:flex items-center mx-5 p-5 sm:p-0 rounded-xl justify-between bg-lightgrey sm:rounded-full">
                                 <div>
                                     <input
-                                     type="name" 
-                                     className="my-4 py-4 sm:pl-6 lg:text-xl text-black sm:rounded-full bg-lightgrey pl-1 focus:outline-none bg-emailbg focus:text-black"
+                                        type="name"
+                                        className="my-4 py-4 sm:pl-6 lg:text-xl text-black sm:rounded-full bg-lightgrey pl-1 focus:outline-none bg-emailbg focus:text-black"
                                         placeholder="Ім&apos;я"
                                         maxLength={32}
                                         autoComplete="off"
                                         {...register('name', {
-                                            required: {value: true, message: 'Введіть будь-ласка коректне імя'},
+                                            required: { value: true, message: 'Введіть будь-ласка коректне імя' },
                                             validate: {}
-                                             })}/>
+                                        })} />
 
                                 </div>
                                 <div>
-                                    
-                                    <input 
-                                    
-                                    type="tel"
+
+                                    <input
+
+                                        type="tel"
                                         className={`${errors.phone ? "border-b border-red " : ""} my-4 py-4 sm:pl-6 lg:text-xl text-black bg-lightgrey focus:outline-none bg-emailbg focus:text-black`}
                                         placeholder="* Телефон"
-                                        autoComplete="off" 
+                                        autoComplete="off"
                                         {...register('phone', {
-                                            required: {value: true, message: 'Введіть будь-ласка коректний номер телефону. Наприклад: 0441234567'},
+                                            required: { value: true, message: 'Введіть будь-ласка коректний номер телефону. Наприклад: 0441234567' },
                                             validate: {},
                                             pattern: {
                                                 value: /^[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
                                                 message: 'Введіть будь-ласка керектний номер телефону. Наприклад "0441234567"'
                                             }
-                                             })} />
+                                        })} />
 
                                 </div>
                                 <div className="sm:mr-3">
