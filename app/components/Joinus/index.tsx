@@ -16,7 +16,7 @@ const Join: FC = () => {
 
 
     const { control, register, handleSubmit, reset, formState } = useForm<FormData>();
-    const { errors } = formState;
+    const { errors, isDirty, isValid } = formState;
     const [isPopupOpen, setIsPopupOpen] = useState(false); // Add state variable
 
     function onSubmit(data: any) {
@@ -92,7 +92,7 @@ const Join: FC = () => {
 
                                 </div>
                                 <div className="sm:mr-3">
-                                    <button type="submit" className="px-4 py-5 text-xl text-white font-semibold text-center rounded-xl sm:rounded-full bg-green hover:bg-darkgreen whitespace-nowrap md:text-md">
+                                    <button disabled={!isDirty || !isValid} type="submit" className="px-4 py-5 text-xl text-white font-semibold text-center rounded-xl sm:rounded-full bg-green hover:bg-darkgreen whitespace-nowrap md:text-md">
                                         Зателефонуйте мені
                                     </button>
                                 </div>
