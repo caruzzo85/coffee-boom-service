@@ -17,7 +17,6 @@ const Join: FC = () => {
 
     const { control, register, handleSubmit, reset, formState } = useForm<FormData>();
     const { errors, isDirty, isValid } = formState;
-    const { errors } = formState;
     const [isPopupOpen, setIsPopupOpen] = useState(false); // Add state variable
 
     function onSubmit(data: any) {
