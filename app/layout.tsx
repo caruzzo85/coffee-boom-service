@@ -23,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Script
+        id='1'
         dangerouslySetInnerHTML={{
           __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -36,6 +37,7 @@ export default function RootLayout({
         <CookieBanner />
         <Footer />
         <Script
+          id='2'
           dangerouslySetInnerHTML={{
             __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7T8BCFN"
           height="0" width="0" style="display:none;visibility:hidden"></iframe>`
