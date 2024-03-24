@@ -8,7 +8,7 @@ import Script from 'next/script';
 
 
 export const metadata = {
-  title: 'Coffee-Boom Сервіс',
+  title: 'Ремонт кавоварок та встановлення вендингових автоматів у Києві | Coffee-Boom Сервіс',
   description: 'Ремонт кавоварок, професійних кавомашин та вендингових автоматів у Києві',
   other: {
     'google-site-verification': 'FMTLZq7FYZn8zobHMHdulE4h72OlgyxkEUwTV0lmYcs'
