@@ -1,5 +1,3 @@
-'use client'
-
 import ContactsPopup from '../components/Navbar/ContactsPopup';
 import { Metadata } from 'next';
 

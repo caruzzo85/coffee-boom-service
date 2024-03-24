@@ -1,5 +1,3 @@
-'use state'
-
 import Image from 'next/image'
 import ContactsPopup from '../components/Navbar/ContactsPopup';
 import Join from '../components/Joinus';
