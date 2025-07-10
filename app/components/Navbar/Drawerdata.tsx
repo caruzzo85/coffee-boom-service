@@ -15,7 +15,7 @@ interface NavigationItem {
 const navigation: NavigationItem[] = [
     { name: 'Хто ми є', href: '/#aboutus-section', current: false },
     { name: 'Ремонт', href: '/#services-section', current: false },
-    { name: 'Встановлення', href: '#vstanovlennya-avtomativ', current: false },
+    { name: 'Встановлення', href: '/#vstanovlennya-avtomativ', current: false },
     { name: 'Доставка', href: '/dostavka-kavy-ta-obladnannia', current: false },
     { name: 'Для кафе', href: '/dlia-kafe', current: false },
     { name: 'Магазин', href: 'https://coffee-boom.com.ua/', current: false },
