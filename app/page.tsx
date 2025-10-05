@@ -12,6 +12,7 @@ import Testimonials from './components/Testimonials/index';
 import Articles from './components/Articles/index';
 import Joinus from './components/Joinus/index';
 import Insta from './components/Insta/index';
+import Shop from './components/Shop';
 
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
       <Manage />
       <Beliefs />
       <FAQ />
+      <Shop />
       {/* <Testimonials /> */}
       {/*<Articles />*/}
       <Joinus />
