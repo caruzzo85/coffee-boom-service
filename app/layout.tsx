@@ -5,6 +5,7 @@ import GoogleAnalytics from './components/GoogleTagManager';
 import CookieBanner from './components/CookieBanner';
 import GoogleTagManager from './components/GoogleTagManager';
 import Script from 'next/script';
+import WhatsappButton from './components/WhatsappButton';
 
 
 export const metadata = {
@@ -36,6 +37,7 @@ export default function RootLayout({
         {children}
         <CookieBanner />
         <Footer />
+        <WhatsappButton />
         <Script
           id='2'
           dangerouslySetInnerHTML={{
