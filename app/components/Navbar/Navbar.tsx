@@ -24,7 +24,7 @@ const navigation: NavigationItem[] = [
     { name: 'Встановлення', href: '/#vstanovlennya-avtomativ', current: false },
     { name: 'Доставка', href: '/dostavka-kavy-ta-obladnannia', current: false },
     { name: 'Для кафе', href: '/dlia-kafe', current: false },
-    { name: 'Магазин', href: 'https://coffee-boom.com.ua/', current: false },
+    { name: 'Магазин', href: 'https://coffee-boom.com/', current: false },
 
 ]
 
